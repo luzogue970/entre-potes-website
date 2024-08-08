@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'MyWebFont';
+    url('myfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+* {
+    scroll-behavior: smooth;
+    font-family: MyWebFont, serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B1D6AB;
+    padding: 25px 0;
+}
+nav .nav-image {
+    width: 150px;
+    cursor: pointer;
+    position: absolute;
+    top: -15px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+nav li a {
+    color: black;
+    font-size: 1.3rem;
+    /*border: solid black 1px;*/
+    /*border-radius: 25px;*/
+}
+nav a {
+    text-decoration: none;
+    padding: 5px;
+}
+nav a:hover {
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .first-image {
+    width: 100%;
+    height: 500px;
+    background-image: url("https://www.tourisme-rennes.com/voy_content/uploads/2023/10/parc-du-thabor-3964.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    box-shadow: 0 1px 10px 5px rgba(0,0,0,0.12);
+}
+main .presentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+main .presentation .company-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 10px 5px rgba(0,0,0,0.12);
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 175px;
+    width: 40%;
+    margin-bottom: 50px;
+}
+main .company-desc .main-description {
+    text-align: justify;
+}
+main .notre-carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+main .notre-carte .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+main .notre-carte img{
+    /*height: 100vh;*/
+    width: 36vw;
+    box-shadow: 0 1px 10px 5px rgba(0,0,0,0.12);
+    border-radius: 15px;
+}
+main .suppliers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+main .suppliers .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .suppliers .content .box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 10px 5px rgba(0,0,0,0.12);
+    border-radius: 15px;
+    width: 60vw;
+}
+main .suppliers .content .box img{
+    height: 150px;
+}
+main .suppliers .content .box .two-img {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+main .suppliers .content .box .two-img img{
+    height: 100px;
+}
+main .suppliers .content .boxB{
+    flex-direction: row-reverse;
+}
+main .suppliers .content .box h1{
+    margin-bottom: 15px;
+}
+main .suppliers .content .box .company-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    padding: 10px;
+}
+main .contact {
+    background-color: #B1D6AB;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+main .contact .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+section .main-title{
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+main .contact ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: self-start;
+}
+main .contact li {
+    /*width: 33%;*/
+}
+main .contact li  h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+main .contact li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+}
+main .contact li a:hover {
+    color: white;
+    transition: ease-in-out 0.2s;
+}
+main .contact li p{
+    margin-left: 15px;
+}
+main .contact img {
+    height: 25px;
+}
+main .contact .map-img {
+    width: 25vw;
+    height: auto;
+    box-shadow: 0 1px 10px 5px rgba(0,0,0,0.12);
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width: 900px) {
+    nav .nav-image {
+        height: 0;
+    }
+        main .notre-carte .content {
+        flex-direction: column;
+    }
+    main .notre-carte .content img{
+        width: 100%
+    }
+        main .suppliers .content .box{
+        flex-direction: column;
+        width: 90%;
+    }
+    main .suppliers .content .box .company-content {
+        width: 90%;
+    }
+}
+
+
+
